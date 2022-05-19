@@ -38,7 +38,8 @@ func main() {
 	})
 
 	// API
-	router.POST("/api/getmynode", getMyNode) // Get My NodeInfo
+	router.POST("/api/getmynode", getMyNode)
+	router.POST("/api/update", update) // Update Node Date
 
 	// Run
 	fmt.Println("NoyPL Starting ...")
