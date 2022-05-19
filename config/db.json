@@ -1,0 +1,7 @@
+{
+    "mysql_host": "127.0.0.1",
+    "mysql_user": "cow",
+    "mysql_pass": "cowcow",
+    "mysql_database": "cow",
+    "mysql_port": "3306"
+}
