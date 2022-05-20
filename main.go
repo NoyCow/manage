@@ -38,8 +38,10 @@ func main() {
 	})
 
 	// API
+	router.POST("/api/login", login)
 	router.POST("/api/getmynode", getMyNode)
 	router.POST("/api/update", update) // Update Node Date
+	router.POST("/api/addnode", addNode)
 
 	// Run
 	fmt.Println("NoyPL Starting ...")
