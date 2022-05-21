@@ -42,6 +42,7 @@ func main() {
 	router.POST("/api/getmynode", getMyNode)
 	router.POST("/api/update", update) // Update Node Date
 	router.POST("/api/addnode", addNode)
+	router.POST("/api/getipinfo", getIpInfo)
 
 	// Run
 	fmt.Println("NoyPL Starting ...")

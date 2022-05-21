@@ -41,7 +41,7 @@ type NodeType struct {
 	Name      string `db:"name" json:"name"`
 	Continent string `db:"continent" json:"continent"`
 	Country   string `db:"country" json:"country"`
-	Area      string `db:"area" json:"area"`
+	Isp       string `db:"ips" json:"isp"`
 	Img       int    `db:"img" json:"img"`
 	Frequency int    `db:"frequency" json:"frequency"`
 	Broadband int    `db:"broadband" json:"broadband"`

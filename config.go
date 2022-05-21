@@ -15,6 +15,8 @@ var sqlConf struct {
 	MysqlPort        string `json:"mysql_port"`
 }
 
+var config map[string]interface{}
+
 func init() {
 	// Db Config
 	dbFile, err := ioutil.ReadFile("./config/mysql.json")
@@ -22,4 +24,10 @@ func init() {
 		fmt.Println("Config Err", err)
 	}
 	json.Unmarshal(dbFile, &sqlConf)
+	// Other Config
+	configFile, err := ioutil.ReadFile("./config/config.json")
+	if err != nil {
+		fmt.Println("Config Err", err)
+	}
+	json.Unmarshal(configFile, &config)
 }
